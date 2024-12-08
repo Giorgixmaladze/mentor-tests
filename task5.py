@@ -6,8 +6,8 @@ def caesar_hiper(text, num):
         #ვამოწმებთ ანუ არის თუ არა ჩვენი ელემენტი ანბანის რმელიმე ასო
         if i.isalpha():
             #ვადგენთ დიდი ასოა თუ პატარა
-            bool = 'A' if i.isupper() else 'a'
-            result += chr((ord(i) - ord(bool) + num)% 26 + ord(bool))
+            char = 'A' if i.isupper() else 'a'
+            result += chr((ord(i) - ord(char) + num)% 26 + ord(char))
         else:
             #თუ სიმბოლო არ არის ასო მაშინ პირდაპირ ვამატებთ შედეგს
             result += i
